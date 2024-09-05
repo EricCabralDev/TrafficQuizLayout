@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#028C04"
+    tools:context=".ResultActivty">
+
+    <TextView
+        android:id="@+id/txtv_final"
+        android:layout_width="282dp"
+        android:layout_height="103dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Obrigado por jogar! Sua pontuação foi:"
+        android:textColor="#EDBB05"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <TextView
+        android:id="@+id/txtv_resultado"
+        android:layout_width="198dp"
+        android:layout_height="111dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="2 Pontos"
+        android:textColor="#EDBB05"
+        android:textSize="44sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_final"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/btn_reiniciar"
+        android:layout_width="257dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#AF0606"
+        android:fontFamily="sans-serif-medium"
+        android:text="Reiniciar o Quiz"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676" />
+
+    <Button
+        android:id="@+id/btn_tela_principal"
+        android:layout_width="257dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#AF0606"
+        android:fontFamily="sans-serif-medium"
+        android:text="Ir para a Tela Inicial"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854" />
+</androidx.constraintlayout.widget.ConstraintLayout>

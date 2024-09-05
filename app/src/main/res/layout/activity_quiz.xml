@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/txtv_pergunta"
+        android:layout_width="330dp"
+        android:layout_height="75dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Qual o significado correto desta placa?"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgv_placa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgv_placa"
+        android:layout_width="254dp"
+        android:layout_height="182dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.194"
+        app:srcCompat="@drawable/placa_1" />
+
+    <RadioGroup
+        android:id="@+id/rdgp_opcoes"
+        android:layout_width="382dp"
+        android:layout_height="280dp"
+        android:background="#6604AE78"
+        app:layout_constraintBottom_toTopOf="@+id/btn_responder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgv_placa"
+        app:layout_constraintVertical_bias="0.44">
+
+        <RadioButton
+            android:id="@+id/btn_opcao1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="opção1"
+            android:textColor="#E8054D"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/btn_opcao2"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="opção2"
+            android:textColor="#E80527"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/btn_opcao3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="opção3"
+            android:textColor="#E80527"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/btn_opcao4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="opção4"
+            android:textColor="#E80527"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_responder"
+        android:layout_width="210dp"
+        android:layout_height="61dp"
+        android:backgroundTint="#29D3CD"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Responder"
+        android:textColor="#020DCD"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937" />
+</androidx.constraintlayout.widget.ConstraintLayout>
